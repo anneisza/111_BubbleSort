@@ -58,14 +58,15 @@ void bubbleSort()
         }
     
     pass = pass + 1; // step 4  
-    }while (pass <= n - 1); //step 5
+    }
+    while (pass <= n - 1); //step 5
     {
         /* code */
     }
     
 }
 
-void displayData()
+void displaysData()
 {
     cout << endl;
     cout << "=======================" << endl;
@@ -83,4 +84,7 @@ void displayData()
 int main()
 {
     inputData();
+    bubbleSort();
+    displaysData();
+    return 0;
 }
