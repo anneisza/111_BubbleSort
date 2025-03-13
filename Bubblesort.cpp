@@ -31,6 +31,13 @@ void inputData(){
     }
 }
 
+//Algorithm for bubble sort:
+//1. Set pass = 1
+//2. Repeat step 3 varying j from 0 to n – 1 – pass
+//3. If the element at index j is greater than the element at index j + 1, swap the two elements
+//4. Increment pass by 1
+//5. If pass <= n – 1, go to step 2
+
 void bubbleSort()
 {
 
@@ -57,6 +64,22 @@ void bubbleSort()
     }
     
 }
+
+void displayData()
+{
+    cout << endl;
+    cout << "=======================" << endl;
+    cout << "Data setelah diurutkan" << endl;
+    cout << "=======================" << endl;
+    cout << endl;
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Data ke-" << i + 1 << " = " << arr[i] << endl;
+    }
+    
+}
+
 int main()
 {
     inputData();
